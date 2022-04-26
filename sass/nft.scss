@@ -17,47 +17,121 @@ body {
         padding: 25px;
         background-color: $color-veryDarkBlueCard;
         border-radius: 20px;
-        
-        img {
-            max-width: 300px;
-            max-height: 300px;
-            width: auto;
-            height: auto;
-            border-radius: 10px;
+
+        &__img {
+            position: relative;
+            transition: 0.7s;
+
+            i {
+                position: absolute;
+                font-size: 50px;
+                color: $color-white;
+                top: 41%;
+                right: 40%;
+                opacity: 0;
+                transition: 0.3s;
+            }
+
+            img {
+                max-width: 300px;
+                max-height: 300px;
+                width: auto;
+                height: auto;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.7s;
+
+                &:hover {
+                    filter: opacity(0.5) drop-shadow(0 0 0 $color-cyan);
+                }
+            }
+            &:hover {
+                i {
+                    opacity: 1;
+                }
+            }
         }
 
         h1 {
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 22px;
             color: $color-white;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color-cyan;
+            }
         }
 
         &__description {
             color: $color-softBlue;
             font-size: 18px;
             font-weight: lighter;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .values {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
+            margin-top: 20px;
 
             &__amount {
                 color: $color-cyan;
                 font-weight: bolder;
+
+                i {
+                    margin-right: 5px;
+                }
             }
 
             &__time-left {
                 color: $color-softBlue;
+
+                i {
+                    margin-right: 5px;
+                }
             }
         }
 
         hr {
-            margin-top: 15px;
-            background-color: $color-softBlue;
-            opacity: 0.2;
+            margin-top: 20px;
+            background-color: $color-veryDarkBlueLine;
+            // opacity: 0.2;
         }
+
+        &__creator {
+            display: flex;
+            color: $color-softBlue;
+            align-items: center;
+            margin-top: 20px;
+
+            img {
+                width: 35px;
+                border-color: $color-white;
+                margin-right: 15px;
+                border: 1px solid $color-white;
+                border-radius: 20px;
+            }
+
+            strong {
+                margin-left: 4px;
+                color: $color-white;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $color-cyan;
+                }
+            }
+        }
+    }
+    
+    footer {
+        color: $color-softBlue;
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        text-align: center;
     }
 }
