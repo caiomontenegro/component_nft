@@ -9,18 +9,20 @@ body {
   background-color: #0d192b;
   font-family: "Outfit", sans-serif;
 }
-body .nft {
+
+.nft {
   width: 300px;
   margin: 150px auto;
   padding: 25px;
   background-color: #14253d;
   border-radius: 20px;
 }
-body .nft__img {
+
+.nft__img {
   position: relative;
   transition: 0.7s;
 }
-body .nft__img i {
+.nft__img i {
   position: absolute;
   font-size: 50px;
   color: white;
@@ -29,7 +31,7 @@ body .nft__img i {
   opacity: 0;
   transition: 0.3s;
 }
-body .nft__img img {
+.nft__img img {
   max-width: 300px;
   max-height: 300px;
   width: auto;
@@ -38,73 +40,79 @@ body .nft__img img {
   cursor: pointer;
   transition: 0.7s;
 }
-body .nft__img img:hover {
-  filter: opacity(0.5) drop-shadow(0 0 0 #00fff7);
-}
-body .nft__img:hover i {
+.nft__img:hover i {
   opacity: 1;
 }
-body .nft h1 {
+.nft__img:hover img {
+  filter: opacity(0.5) drop-shadow(0 0 0 #00fff7);
+}
+
+h1 {
   margin-top: 20px;
   font-size: 22px;
   color: white;
   cursor: pointer;
   transition: 0.3s;
 }
-body .nft h1:hover {
+h1:hover {
   color: #00fff7;
 }
-body .nft__description {
+
+.nft__description {
   color: #8bacda;
   font-size: 18px;
   font-weight: lighter;
   margin-top: 20px;
 }
-body .nft .values {
+
+.values {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-body .nft .values__amount {
+.values__amount {
   color: #00fff7;
   font-weight: bolder;
 }
-body .nft .values__amount i {
+.values__amount i {
   margin-right: 5px;
 }
-body .nft .values__time-left {
+.values__time-left {
   color: #8bacda;
 }
-body .nft .values__time-left i {
+.values__time-left i {
   margin-right: 5px;
 }
-body .nft hr {
+
+hr {
   margin-top: 20px;
   background-color: #2f415b;
 }
-body .nft__creator {
+
+.nft__creator {
   display: flex;
   color: #8bacda;
   align-items: center;
   margin-top: 20px;
 }
-body .nft__creator img {
+.nft__creator img {
   width: 35px;
   border-color: white;
   margin-right: 15px;
   border: 1px solid white;
   border-radius: 20px;
 }
-body .nft__creator strong {
+.nft__creator strong {
   margin-left: 4px;
   color: white;
   cursor: pointer;
   transition: 0.3s;
 }
-body .nft__creator strong:hover {
+.nft__creator strong:hover {
   color: #00fff7;
 }
-body footer {
+
+footer {
   color: #8bacda;
   position: absolute;
   bottom: 0%;
