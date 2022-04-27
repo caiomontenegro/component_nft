@@ -95,20 +95,21 @@ hr {
   align-items: center;
   margin-top: 20px;
 }
-.nft__creator img {
+.nft__creator-avatar {
   width: 35px;
   border-color: white;
   margin-right: 15px;
   border: 1px solid white;
   border-radius: 20px;
 }
-.nft__creator strong {
+.nft__creator-link {
   margin-left: 4px;
   color: white;
   cursor: pointer;
   transition: 0.3s;
+  font-weight: bolder;
 }
-.nft__creator strong:hover {
+.nft__creator-link:hover {
   color: #00fff7;
 }
 

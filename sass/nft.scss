@@ -43,7 +43,7 @@ body {
         cursor: pointer;
         transition: 0.7s;
     }
-    
+
     &:hover {
         i {
             opacity: 1;
@@ -109,7 +109,7 @@ hr {
     align-items: center;
     margin-top: 20px;
 
-    img {
+    &-avatar {
         width: 35px;
         border-color: $color-white;
         margin-right: 15px;
@@ -117,11 +117,12 @@ hr {
         border-radius: 20px;
     }
 
-    strong {
+    &-link {
         margin-left: 4px;
         color: $color-white;
         cursor: pointer;
         transition: 0.3s;
+        font-weight: bolder;
 
         &:hover {
             color: $color-cyan;
