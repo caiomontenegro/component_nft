@@ -23,6 +23,7 @@ body {
 .nft__img {
     position: relative;
     transition: 0.7s;
+    cursor: pointer;
 
     i {
         position: absolute;
@@ -48,6 +49,7 @@ body {
     &:hover {
         i {
             opacity: 1;
+            cursor: pointer;
         }
 
         img {
